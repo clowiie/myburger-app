@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import './BurgerIngredient.css'
 
-class burgerIngredient extends Component {
+class BurgerIngredient extends Component {
   render() {
     let ingredient = null
 
@@ -20,16 +20,16 @@ class burgerIngredient extends Component {
         )
         break
       case 'meat':
-        ingredent = <div className="Meat" />
+        ingredient = <div className="Meat" />
         break
       case 'cheese':
-        ingredent = <div className="Cheese" />
+        ingredient = <div className="Cheese" />
         break
       case 'salad':
-        ingredent = <div className="Salad" />
+        ingredient = <div className="Salad" />
         break
       case 'bacon':
-        ingredent = <div className="Bacon" />
+        ingredient = <div className="Bacon" />
         break
       default:
         ingredient = null
@@ -42,4 +42,4 @@ BurgerIngredient.propTypes = {
   type: PropTypes.string.isRequired
 }
 
-export default burgerIngredient
+export default BurgerIngredient
