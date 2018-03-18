@@ -11,7 +11,7 @@ const controls = [
 ]
 
 const buildControls = props => {
-  console.log(props.price)
+  // console.log(props.price.toFixed(2))
   return (
     <div className={'BuildControls'}>
       <p>
